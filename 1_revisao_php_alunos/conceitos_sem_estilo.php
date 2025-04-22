@@ -2,8 +2,27 @@
 // Inicia a sessão PHP para permitir o armazenamento de dados entre páginas através de cookies
 session_start();
 
+// ___________________________________________________________
+// Conexao com o bando de dados Mysql (nome do BD: sistema simples)
 
-// 1º Digitação da lógica em PHP (Aqui)
+// define variaveis de configuraçao para conexao com o bando de dados MYsql
+$host = "Localhost";  // wndereço ddo servidos de bando de dados MySql
+$usuario = "root";      //Nome de usuario do MySql
+$senha = "Senai@118";       // Senha do usuario MySql
+$banco = "sistema_simples"  //Nome do bando de dados a ser utilizado
+
+// funçao quie estabelece conexao com o banco de dados e retorna o objeto de conexao
+function conectarBD() {
+    // indica que serao usadas as variaveis globais definidas anteriormente
+    global $host, $usuario, $senha, $banco;
+
+    // cria um novo objeto de conexao MySql com os parametros fornecidos
+    if ($conexao->connect_error) {
+
+        // se houver erro, interrompe a execuçao e exibe a mensagem de erro
+    }
+}
+
 
 
 ?>
