@@ -9,7 +9,7 @@
 // ---- 1. VARIÁVEIS ----
 echo "<h2>1. Variáveis</h2>";
 
-$nome = "Maria"
+$nome = "Maria";
 $idade = 25;
 $profissao = "Desenvolvedora";
 $salario = 5000.50;
@@ -256,9 +256,9 @@ error_reporting(E_ALL);
 echo "<strong>Resultados:</strong> <br>";
 
 
-foreach ($turma as $nome => $aluno) {
+foreach ($turma as $aluno) {
     // Calculando a média do aluno
-    $media = calcularMedia($aluno["notas"]);
+    $media = Media($aluno["notas"]);
     echo "Aluno: {$aluno['nome']} - Média: " . number_format($media, 3, ',', '.') . "<br>";
 }
 // Verificando se o aluno está aprovado ou reprovado
