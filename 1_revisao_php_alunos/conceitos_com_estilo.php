@@ -8,7 +8,7 @@ session_start();
 $host = "localhost";
 $usuario = "root";
 $senha = "Senai@118";
-$banco = "sistema_simples";
+$banco = "sistemas_simples";
 
 // Função para conectar ao banco de dados
 function conectarBD() {

@@ -270,18 +270,7 @@ HTML + PHP Para exibição do sistema -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema PHP Simplificado</title>
 
-    <style>
-        * {
-            background-color: #f4f4f4;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 20px;
-            
-        }
 
-
-    </style>
-</head>
 <body>
     <!-- Cabeçalho com informações de login -->
     <h1>Sistema PHP Simplificado</h1>
