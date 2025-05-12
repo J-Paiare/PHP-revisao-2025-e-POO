@@ -24,7 +24,13 @@ $cachorros = [
 
 
 // 2ª Digitação (Aqui)
+function comer($comida){
+return($comida >0) $comida -1:0;
+}
 
+function dormir($sono) {
+    return false
+}
 
 // Exibindo os resultados no navegador
 echo "<!DOCTYPE html>";

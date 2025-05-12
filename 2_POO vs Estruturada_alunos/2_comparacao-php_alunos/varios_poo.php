@@ -7,19 +7,67 @@
 // 1ª Digitação (Aqui)
 
 
-// Criando vários cachorros
-// $cachorros = [
-//     new Cachorro("Cléo", 247, true),
-//     new Cachorro("Francisco", 5, true),
-//     new Cachorro("Conan", 19, false),
-//     new Cachorro("Leleco", 3, false),
-//     new Cachorro("Babi", 13, true)
-// ];
+
 
 // Usando métodos para manipular os objetos
 
 
 // 2ª Digitação (Aqui)
+class cachorro {
+    private $nome;
+    private $comida;
+    private $sono;
+
+    public function __construct($nome, $comida, $sono) {
+        $this->nome = $nome;
+        $this->comida = $comida;
+        $this->sono = $sono;
+    }
+
+    public function comer() {
+        if ($this->comida > 0) {
+        $this->comida -= 1;}
+    }
+
+    public function dormir() {
+        $this->sono = false;
+    }
+
+    public function getNome() {
+        Return $this->nome;
+    }
+
+    public function getComida() {
+        Return $this->comida;
+    }
+
+    public function getsono() {
+        Return $this->sono;
+}
+
+}
+
+
+// Criando vários cachorros
+
+$cachorros = [
+    new Cachorro("Cléo", 247, true),
+    new Cachorro("Francisco", 5, true),
+    new Cachorro("Conan", 19, false),
+    new Cachorro("Leleco", 3, false),
+    new Cachorro("Babi", 13, true)
+];
+
+foreach ($cachorros as $cachorro) {
+    if ($cachorro->getComida()> 0) {
+        $cachorro-> comer();
+    }
+
+    if ($cachorro->getSono()) {
+        $cachorro->dormir();
+    }
+
+}
 
 
 // Exibindo os resultados no navegador
