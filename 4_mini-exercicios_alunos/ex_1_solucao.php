@@ -10,7 +10,7 @@ abstract class ItemBiblioteca {
     public function __construct(string $titulo, string $codigo) {
         $this->titulo = $titulo;
         $this->codigo = $codigo;
-        $this->disponivel = true;
+        $this->disponivel = true; 
     }
 
     // Método abstrato (Não implementado agora)
