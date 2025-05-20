@@ -3,53 +3,42 @@
 // PARTE 2: PROGRAMAÇÃO ORIENTADA A OBJETOS
 // ==========================================
 
-
-// 1ª Digitação (Aqui)
-
-
-
-
-// Usando métodos para manipular os objetos
-
-
-// 2ª Digitação (Aqui)
-class cachorro {
+class Cachorro {
     private $nome;
     private $comida;
     private $sono;
-
+    
     public function __construct($nome, $comida, $sono) {
         $this->nome = $nome;
         $this->comida = $comida;
         $this->sono = $sono;
     }
-
+    
     public function comer() {
         if ($this->comida > 0) {
-        $this->comida -= 1;}
+            $this->comida -= 1;
+        }
     }
-
+    
     public function dormir() {
         $this->sono = false;
     }
-
+    
+    // Getters
     public function getNome() {
-        Return $this->nome;
+        return $this->nome;
     }
-
+    
     public function getComida() {
-        Return $this->comida;
+        return $this->comida;
     }
-
-    public function getsono() {
-        Return $this->sono;
+    
+    public function getSono() {
+        return $this->sono;
+    }
 }
-
-}
-
 
 // Criando vários cachorros
-
 $cachorros = [
     new Cachorro("Cléo", 247, true),
     new Cachorro("Francisco", 5, true),
@@ -58,17 +47,15 @@ $cachorros = [
     new Cachorro("Babi", 13, true)
 ];
 
+// Usando métodos para manipular os objetos
 foreach ($cachorros as $cachorro) {
-    if ($cachorro->getComida()> 0) {
-        $cachorro-> comer();
+    if ($cachorro->getComida() > 0) {
+        $cachorro->comer();
     }
-
     if ($cachorro->getSono()) {
         $cachorro->dormir();
     }
-
 }
-
 
 // Exibindo os resultados no navegador
 echo "<!DOCTYPE html>

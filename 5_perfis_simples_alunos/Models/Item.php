@@ -1,5 +1,3 @@
-<!-- 4ª Digitação (Aqui)
-Este arquivo será o responsável por: (Modelo para gerenciar itens) -->
 <?php
 /**
  * Modelo para gerenciar itens
@@ -15,6 +13,7 @@ class Item {
         $stmt->execute();
         return $stmt->fetchAll();
     }
+    
     /**
      * Busca um item pelo ID
      */
@@ -25,7 +24,7 @@ class Item {
         $stmt->execute(['id' => $id]);
         return $stmt->fetch();
     }
-
+    
     /**
      * Adiciona um novo item
      */
@@ -38,7 +37,7 @@ class Item {
             'conteudo' => $conteudo
         ]);
     }
-
+    
     /**
      * Atualiza um item existente
      */
@@ -52,10 +51,10 @@ class Item {
             'conteudo' => $conteudo
         ]);
     }
-
+    
     /**
-     * Exclui um item 
-     */ 
+     * Exclui um item
+     */
     public static function excluir($id) {
         $conn = conectarBD();
         $query = "DELETE FROM itens WHERE id = :id";
