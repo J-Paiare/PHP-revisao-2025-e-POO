@@ -12,8 +12,9 @@ class Auth {
         $stmt = $conn->prepare($query);
         $stmt->execute(['usuario'=>$usuario]);
         $user = $stmt->fetch();
-
+        
         if ($user && password_verify($senha, $user['senha'])) {
+            
             return [
                 'id' => $user['id'],
                 'nome'=> $user['nome'],
